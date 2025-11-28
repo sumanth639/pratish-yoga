@@ -565,15 +565,15 @@ export const YogaHeroSection = () => {
       {/* Main content */}
       <div className="yoga-hero-content">
         <h1 ref={titleRef} className="yoga-hero-title" style={{ visibility: 'hidden' }}>
-          INNER
+          Breathe
         </h1>
         
         <div ref={subtitleRef} className="yoga-hero-subtitle" style={{ visibility: 'hidden' }}>
           <p className="subtitle-line">
-            Find your center, embrace the journey
+            Transform our life through ancient wisdom,
           </p>
           <p className="subtitle-line">
-            where mind, body and spirit unite
+            where mind, body and spirit unite.
           </p>
         </div>
 
@@ -593,10 +593,10 @@ export const YogaHeroSection = () => {
           visibility: scrollProgress < 0.3 ? 'visible' : 'hidden'
         }}>
           <div className="credentials-banner">
-            <span className="credentials-text">YTTC-200 Certified • 10+ Years Experience</span>
+            <span className="credentials-text">Certified YTTC-200 • Transforming Lives Since 2014</span>
           </div>
           <div className="floating-buttons">
-            <Link to="/demo" className="floating-btn trial-btn">
+            <Link to="/free-trial" className="floating-btn trial-btn">
               <span className="btn-icon">🎯</span>
               <span className="btn-text">Start Free Trial</span>
               <span className="btn-arrow">→</span>
