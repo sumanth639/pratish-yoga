@@ -1,9 +1,9 @@
-import nesting from 'postcss-nesting';
+import postcssNesting from 'postcss-nesting';
 
 export default {
   plugins: {
-    nesting,
+    'postcss-nesting': postcssNesting(),
     tailwindcss: {},
     autoprefixer: {},
   },
-}
+};

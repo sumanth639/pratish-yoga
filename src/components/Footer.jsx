@@ -36,7 +36,6 @@ function Footer() {
       <AnimatePresence>
         {isVisible && (
           <motion.button
-            // 1. Fixed width/height + flex center ensures perfect circle
             className="fixed bottom-8 right-8 z-50 flex items-center justify-center w-12 h-12 md:w-14 md:h-14 bg-gradient-to-r from-red-600 to-red-700 text-white rounded-full shadow-2xl hover:scale-110 transition-transform duration-300 group border-2 border-white/20"
             onClick={scrollToTop}
             initial={{ opacity: 0, scale: 0, rotate: 180 }}
@@ -45,10 +44,8 @@ function Footer() {
             whileHover={{ y: -5 }}
             whileTap={{ scale: 0.9 }}
           >
-            {/* 2. Glow Effect - Positioned absolutely but with negative z-index or behind content */}
             <div className="absolute inset-0 rounded-full bg-red-600 blur-md opacity-40 group-hover:opacity-80 transition-opacity duration-300 -z-10"></div>
 
-            {/* 3. Icon - relative and z-10 ensures it sits ON TOP of the glow/bg */}
             <FaArrowUp className="w-5 h-5 md:w-6 md:h-6 text-white relative z-10 group-hover:animate-bounce" />
           </motion.button>
         )}

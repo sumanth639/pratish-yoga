@@ -98,6 +98,14 @@
     font-style: Light;
   }
 }
+@mixin prata-font {
+  @font-face {
+    font-family: "Prata";
+    src: url("../assets/fonts/Prata/Prata-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+}
 @mixin logo-font-style {
   @font-face {
     font-family: "MoonDance-Regular";

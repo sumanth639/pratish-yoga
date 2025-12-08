@@ -565,15 +565,16 @@ export const YogaHeroSection = () => {
       {/* Main content */}
       <div className="yoga-hero-content">
         <h1 ref={titleRef} className="yoga-hero-title" style={{ visibility: 'hidden' }}>
-          Breathe
+          BREATHE
         </h1>
         
         <div ref={subtitleRef} className="yoga-hero-subtitle" style={{ visibility: 'hidden' }}>
           <p className="subtitle-line">
-            Transform our life through ancient wisdom,
+            Transform your life through ancient wisdom
+
           </p>
           <p className="subtitle-line">
-            where mind, body and spirit unite.
+            Find peace in movement, strength in stillness
           </p>
         </div>
 
