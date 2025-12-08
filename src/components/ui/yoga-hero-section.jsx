@@ -3,6 +3,8 @@ import React, { useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
 import { gsap } from 'gsap';
 import { Link } from 'react-router-dom';
+import { FaLeaf, FaRegCalendarCheck, FaArrowRightLong } from "react-icons/fa6";
+
 
 export const YogaHeroSection = () => {
   const containerRef = useRef(null);
@@ -597,15 +599,25 @@ export const YogaHeroSection = () => {
             <span className="credentials-text">Certified YTTC-200 • Transforming Lives Since 2014</span>
           </div>
           <div className="floating-buttons">
-            <Link to="/free-trial" className="floating-btn trial-btn">
-              <span className="btn-icon">🎯</span>
-              <span className="btn-text">Start Free Trial</span>
-              <span className="btn-arrow">→</span>
-            </Link>
-            <Link to="/batch-timings" className="floating-btn session-btn">
-              <span className="btn-icon">📅</span>
-              <span className="btn-text">Book a Session</span>
-            </Link>
+          
+
+
+<Link 
+  to="/free-trial" 
+  className="floating-btn trial-btn flex items-center gap-3 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full shadow-lg transition-all duration-300 group"
+>
+  <FaLeaf className="text-xl group-hover:scale-110 transition-transform" />
+  <span className="font-semibold tracking-wide">Start Free Trial</span>
+  <FaArrowRightLong className="opacity-80 group-hover:translate-x-1 transition-transform" />
+</Link>
+
+<Link 
+  to="/batch-timings" 
+  className="floating-btn session-btn flex items-center gap-3 border border-gray-300 text-gray-800 px-6 py-3 rounded-full bg-white hover:bg-gray-100 shadow-sm transition-all duration-300"
+>
+  <FaRegCalendarCheck className="text-xl text-green-700" />
+  <span className="font-semibold tracking-wide">Book a Session</span>
+</Link>
           </div>
         </div>
       </div>

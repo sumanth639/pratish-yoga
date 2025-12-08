@@ -22,21 +22,12 @@ const YouTubeSection = () => {
   const youtubeVideos = [
     {
       id: "1",
-      title: "yoga for all kinds of health issues",
+      title: "Yoga for all kinds of health issues",
       thumbnail: "https://img.youtube.com/vi/W8LMHFerAC4/maxresdefault.jpg",
       duration: "0:41",
       views: "152 views",
       uploadTime: "2 years ago",
       videoId: "W8LMHFerAC4",
-    },
-    {
-      id: "2",
-      title: "yoga for a healthy mind and body @yogawithpratish",
-      thumbnail: "https://img.youtube.com/vi/eRVM2NqZtIA/maxresdefault.jpg",
-      duration: "0:50",
-      views: "294 views",
-      uploadTime: "2 years ago",
-      videoId: "eRVM2NqZtIA",
     },
     {
       id: "3",
